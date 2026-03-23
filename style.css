@@ -1,0 +1,227 @@
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', sans-serif; color: #1e293b; background: #fff; line-height: 1.7; }
+a { text-decoration: none; color: inherit; }
+
+/* ===== VARIÁVEIS ===== */
+:root {
+    --azul: #1e3a5f;
+    --azul-medio: #2563a8;
+    --laranja: #e07b2a;
+    --cinza-claro: #f1f5f9;
+    --branco: #ffffff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky; top: 0; z-index: 1000;
+    background: var(--azul);
+    padding: 0.75rem 1.5rem;
+}
+.nav-container {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand {
+    font-size: 1.1rem; font-weight: 700; color: var(--branco);
+}
+.nav-brand span { color: var(--laranja); margin-left: 4px; }
+.nav-menu { display: flex; gap: 1.5rem; }
+.nav-menu a { color: rgba(255,255,255,0.85); font-size: 0.9rem; transition: color 0.2s; }
+.nav-menu a:hover { color: var(--laranja); }
+.nav-toggle { display: none; background: none; border: none; color: white; font-size: 1.6rem; cursor: pointer; }
+
+@media (max-width: 768px) {
+    .nav-toggle { display: block; }
+    .nav-menu {
+    display: none; flex-direction: column;
+    position: absolute; top: 56px; left: 0; right: 0;
+    background: var(--azul); padding: 1rem 1.5rem; gap: 1rem;
+    }
+    .nav-menu.open { display: flex; }
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(135deg, var(--azul) 0%, #2a4a7f 100%);
+    color: var(--branco); text-align: center;
+    padding: 5rem 1.5rem 4rem;
+}
+.badge {
+    display: inline-block;
+    background: rgba(224,123,42,0.2); border: 1px solid var(--laranja);
+    color: var(--laranja); border-radius: 999px;
+    padding: 0.3rem 1rem; font-size: 0.85rem; margin-bottom: 1.5rem;
+}
+.hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); max-width: 700px; margin: 0 auto 1rem; }
+.hero h1 span { color: var(--laranja); }
+.hero > p { max-width: 600px; margin: 0 auto 2rem; opacity: 0.9; }
+.hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
+
+.btn { padding: 0.75rem 1.75rem; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: opacity 0.2s; }
+.btn-primary { background: var(--laranja); color: var(--branco); }
+.btn-secondary { background: rgba(255,255,255,0.15); color: var(--branco); border: 1px solid rgba(255,255,255,0.4); }
+.btn:hover { opacity: 0.85; }
+
+.hero-cards { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero-card {
+    background: rgba(255,255,255,0.1); border-radius: 12px;
+    padding: 1.25rem 1.5rem; min-width: 180px; text-align: center;
+}
+.hero-card .icon { font-size: 1.8rem; display: block; margin-bottom: 0.5rem; }
+.hero-card strong { display: block; margin-bottom: 0.25rem; }
+.hero-card p { font-size: 0.85rem; opacity: 0.8; }
+
+/* ===== SEÇÕES ===== */
+.section { padding: 4rem 1.5rem; }
+.section-alt { background: var(--cinza-claro); }
+.container { max-width: 1000px; margin: 0 auto; }
+
+.section-tag {
+    display: inline-block; background: #e8f0fe;
+    color: var(--azul-medio); border-radius: 999px;
+    padding: 0.25rem 0.9rem; font-size: 0.8rem;
+    font-weight: 600; margin-bottom: 0.75rem;
+}
+.section h2 { font-size: 1.8rem; color: var(--azul); margin-bottom: 1rem; }
+.section h3 { font-size: 1.2rem; color: var(--azul); margin-bottom: 1rem; }
+.section p { margin-bottom: 1rem; color: #374151; }
+
+/* ===== CARDS ===== */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem; margin-top: 1.5rem;
+}
+.card {
+    background: var(--branco); border: 1px solid #e2e8f0;
+    border-radius: 12px; padding: 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.card strong { display: block; margin-bottom: 0.5rem; color: var(--azul); }
+.card p { font-size: 0.9rem; color: #555; margin: 0; }
+.card-warn { border-left: 4px solid var(--laranja); }
+
+/* ===== STEPS ===== */
+.steps { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+.step {
+    flex: 1 1 160px;
+    background: var(--branco); border-radius: 12px;
+    padding: 1.25rem; border: 1px solid #e2e8f0;
+    text-align: center;
+}
+.step-num {
+    font-size: 1.8rem; font-weight: 800;
+    color: var(--laranja); margin-bottom: 0.5rem;
+}
+.step strong { display: block; color: var(--azul); margin-bottom: 0.25rem; }
+.step p { font-size: 0.85rem; color: #555; margin: 0; }
+
+/* ===== STATS ===== */
+.stats {
+    display: flex; flex-wrap: wrap; gap: 1rem;
+    justify-content: center; margin-top: 2.5rem;
+}
+.stat {
+    background: var(--azul); color: var(--branco);
+    border-radius: 12px; padding: 1.5rem 2rem; text-align: center;
+    flex: 1 1 120px;
+}
+.stat strong { font-size: 2rem; display: block; color: var(--laranja); }
+.stat span { font-size: 0.85rem; opacity: 0.85; }
+
+/* ===== ALERT ===== */
+.alert {
+    background: #fff7ed; border: 1px solid var(--laranja);
+    border-radius: 8px; padding: 1rem 1.25rem;
+    font-size: 0.9rem; margin: 1.5rem 0; color: #7c3a00;
+}
+
+/* ===== BOAS PRÁTICAS ===== */
+.boas-praticas { padding-left: 1.5rem; }
+.boas-praticas li { margin-bottom: 0.5rem; color: #374151; }
+
+/* ===== FAQ ===== */
+.faq-list { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem; }
+details {
+    background: var(--branco); border: 1px solid #e2e8f0;
+    border-radius: 10px; padding: 1rem 1.25rem;
+}
+summary {
+    font-weight: 600; cursor: pointer; color: var(--azul);
+    list-style: none; display: flex; justify-content: space-between;
+}
+summary::after { content: "+"; font-size: 1.2rem; color: var(--laranja); }
+details[open] summary::after { content: "−"; }
+details p { margin-top: 0.75rem; color: #555; font-size: 0.9rem; }
+
+/* ===== SOBRE ===== */
+#sobre ul { list-style: none; margin-top: 1rem; margin-bottom: 1rem; }
+#sobre ul li { margin-bottom: 0.5rem; color: #374151; }
+
+/* ===== RODAPÉ ===== */
+.footer { background: var(--azul); color: rgba(255,255,255,0.85); padding: 3rem 1.5rem 1.5rem; }
+.footer-inner {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem; margin-bottom: 2rem;
+}
+.footer strong { display: block; color: var(--branco); margin-bottom: 0.75rem; }
+.footer p, .footer small { font-size: 0.875rem; }
+.footer ul { list-style: none; }
+.footer ul li { margin-bottom: 0.4rem; }
+.footer ul a { color: rgba(255,255,255,0.7); font-size: 0.875rem; }
+.footer ul a:hover { color: var(--laranja); }
+.footer-copy {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 1.25rem; font-size: 0.78rem;
+    text-align: center; color: rgba(255,255,255,0.55); line-height: 1.8;
+}
+
+/* ===== LOGO PET-SAÚDE ===== */
+.nav-logo {
+    width: 45px; height: 45px; border-radius: 12px;
+    object-fit: contain; margin-right: 10px;
+    border: 2px solid rgba(255,255,255,0.4);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.nav-brand {
+    display: flex; align-items: center;
+    font-size: 1.05rem; font-weight: 700; color: var(--branco);
+}
+.nav-brand span {
+    color: var(--laranja); margin-left: 4px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav-logo { width: 38px; height: 38px; margin-right: 8px; }
+    .nav-brand span { font-size: 0.98rem; }
+}
+
+/* ===== REDES SOCIAIS ===== */
+.social-section {
+    background: rgba(255,255,255,0.95); border-radius: 12px;
+    padding: 1.5rem; margin: 2rem 0; border-left: 4px solid var(--laranja);
+}
+.social-links {
+    display: flex; flex-direction: column; gap: 0.75rem;
+    margin-top: 1rem;
+}
+.social-link {
+    display: flex; align-items: center;
+    padding: 0.75rem 1rem; background: var(--cinza-claro);
+    border-radius: 10px; transition: all 0.2s;
+    font-weight: 500; color: var(--azul);
+}
+.social-link:hover {
+    background: var(--azul); color: var(--branco);
+    transform: translateX(4px);
+}
+.social-img {
+    width: 32px; height: 32px; border-radius: 50%;
+    object-fit: cover; margin-right: 12px;
+    border: 2px solid rgba(255,255,255,0.8);
+}
+.footer .social-links { gap: 0.5rem; }
+.footer .social-link { padding: 0.5rem 0.75rem; font-size: 0.9rem; }
