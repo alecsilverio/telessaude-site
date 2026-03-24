@@ -29,3 +29,14 @@ window.addEventListener('scroll', () => {
         : 'rgba(255,255,255,0.85)';
     });
 });
+
+// GIF jacaré: mostra só uma vez por carregamento da página
+window.addEventListener('load', function() {
+    const jacareGif = document.querySelector('img[src*="jacare.gif"]');
+    if (jacareGif) {
+        // Esconde o GIF após 6 segundos (ajuste pelo tempo do seu GIF)
+        setTimeout(function() {
+            jacareGif.style.display = 'none';
+        }, 5000); // 6000ms = 6 segundos
+    }
+});
