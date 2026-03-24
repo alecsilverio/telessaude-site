@@ -37,6 +37,18 @@ window.addEventListener('load', function() {
         // Esconde o GIF após 6 segundos (ajuste pelo tempo do seu GIF)
         setTimeout(function() {
             jacareGif.style.display = 'none';
-        }, 5000); // 6000ms = 6 segundos
+        }, 6000); // 6000ms = 6 segundos
     }
 });
+
+// Loader jacaré: aparece primeiro, depois some e revela o site
+window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    
+    // Some após 2,5 segundos (rápido!)
+    setTimeout(function() {
+        loader.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }, 5000);
+});
+
