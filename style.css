@@ -244,7 +244,7 @@ details p { margin-top: 0.75rem; color: #555; font-size: 0.9rem; }
 .loader-content {
     text-align: center;
     color: white;
-    max-width: 600px;
+    max-width: 700px;
     padding: 2rem;
 }
 
@@ -370,5 +370,41 @@ body {
     }
     .flow-arrow {
         display: none;
+    }
+}
+
+/* Bloco para espandir para varios tipos de dispositivos */
+@media (min-width: 1200px) {
+    .nav-container,
+    .container {
+        max-width: none !important;
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .hero {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .hero-cards {
+        max-width: none;
+        gap: 2rem;
+    }
+    
+    .hero-card {
+        min-width: 220px;
+        padding: 1.5rem 2rem;
+    }
+    
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
     }
 }
