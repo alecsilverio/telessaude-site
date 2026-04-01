@@ -30,13 +30,13 @@ Site institucional desenvolvido **pelo monitor Alexandre Silvério (Grupo 4 PET-
 ## 👥 Equipe Técnica & Avaliação
 
 ### 🩺 Orientador de Serviço
-**Daniel Mendes** [file:52]
+**Daniel Mendes** 
 
 ### 👨‍🏫 Tutores
-**Marcos Martines** | **Vladimir Piccolo** [file:53]
+**Marcos Martinelle** | **Vladimir Piccolo** 
 
 ### 🩺 Preceptores
-**Henrique** | **Lidiane Gaspareli** [file:54]
+**Higor Henrique** | **Lidiane Frasson** 
 
 **💻 Desenvolvimento Técnico:**  
 Alexandre Silvério Damião dos Santos (Monitor PET)
@@ -58,10 +58,7 @@ cd telessaude-site
 
 ## 📄 Créditos Completos
 **Responsável pelo Desenvolvimento:** Alexandre Silvério (Monitor)  
-**Validação Técnica:** Lidiane Gaspareli + Equipe CEM  
 **Período:** Dez/2025 - Mar/2026  
-**Licença:** MIT
 
 ---
-*PET-Saúde MS | IFMS Três Lagoas*
-*Desenvolvido conforme diretrizes Lei Linguagem Simples (15.263/2025)*
+*PET-Saúde MS | IFMS - Três Lagoas/MS*
