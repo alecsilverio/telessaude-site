@@ -11,7 +11,7 @@
 
 Site institucional desenvolvido **pelo monitor Alexandre Silvério (Grupo 4 PET-Saúde)** para esclarecer o funcionamento da telemedicina no SUS de Três Lagoas/MS.
 
-**Período de desenvolvimento:** Dezembro 2025 - Março 2026
+**Período de desenvolvimento:** Fevereiro - Março 2026
 
 ### Objetivos Estratégicos
 - Educação em saúde pública sobre telemedicina SUS
@@ -23,14 +23,11 @@ Site institucional desenvolvido **pelo monitor Alexandre Silvério (Grupo 4 PET-
 
 | Unidade | Especialidades | Modalidade |
 |---------|----------------|------------|
-| **CEM** | Neurologia<br>Endocrinologia | Teleconsulta |
-| **CAPS**<br>(Saúde Mental) | Psicologia<br>Psiquiatria | Teleconsulta |
+| **CEM** | Neurologia <br> Endocrinologia | Teleconsulta |
+| **CAPS** <br> (Saúde Mental) | Psicologia <br> Psiquiatria | Teleconsulta |
 | **Clínica da Criança** | Neuropediatria | Teleconsulta |
 
 ## 👥 Equipe Técnica & Avaliação
-
-### 🩺 Orientador de Serviço
-**Daniel Mendes** 
 
 ### 👨‍🏫 Tutores
 **Marcos Martinelle** | **Vladimir Piccolo** 
@@ -38,8 +35,11 @@ Site institucional desenvolvido **pelo monitor Alexandre Silvério (Grupo 4 PET-
 ### 🩺 Preceptores
 **Higor Henrique** | **Lidiane Frasson** 
 
+### 🩺 Orientador de Serviço
+**Daniel Mendes** 
+
 **💻 Desenvolvimento Técnico:**  
-Alexandre Silvério Damião dos Santos (Monitor PET)
+Alexandre Silvério Damião dos Santos (Monitor)
 
 ### 🔧 Stack Tecnológica
 - **Frontend**: HTML5 | CSS3 | Vanilla JS
@@ -58,7 +58,7 @@ cd telessaude-site
 
 ## 📄 Créditos Completos
 **Responsável pelo Desenvolvimento:** Alexandre Silvério (Monitor)  
-**Período:** Dez/2025 - Mar/2026  
+**Período:** fev/2026 - Mar/2026  
 
 ---
 *PET-Saúde MS | IFMS - Três Lagoas/MS*
