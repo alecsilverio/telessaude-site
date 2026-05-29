@@ -6,9 +6,9 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== VARIÁVEIS ===== */
 :root {
-    --azul: #1e3a5f;
-    --azul-medio: #2563a8;
-    --laranja: #e07b2a;
+    --azul: #1e3a8a;
+    --azul-medio: #1e40af;
+    --vermelho: #db2b2b;
     --cinza-claro: #f1f5f9;
     --branco: #ffffff;
 }
@@ -26,10 +26,10 @@ a { text-decoration: none; color: inherit; }
 .nav-brand {
     font-size: 1.1rem; font-weight: 700; color: var(--branco);
 }
-.nav-brand span { color: var(--laranja); margin-left: 4px; }
+.nav-brand span { color: var(--vermelho); margin-left: 4px; }
 .nav-menu { display: flex; gap: 1.5rem; }
 .nav-menu a { color: rgba(255,255,255,0.85); font-size: 0.9rem; transition: color 0.2s; }
-.nav-menu a:hover { color: var(--laranja); }
+.nav-menu a:hover { color: var(--vermelho); }
 .nav-toggle { display: none; background: none; border: none; color: white; font-size: 1.6rem; cursor: pointer; }
 
 @media (max-width: 768px) {
@@ -50,17 +50,17 @@ a { text-decoration: none; color: inherit; }
 }
 .badge {
     display: inline-block;
-    background: rgba(224,123,42,0.2); border: 1px solid var(--laranja);
-    color: var(--laranja); border-radius: 999px;
+    background: rgba(224, 42, 42, 0.2); border: 1px solid var(--vermelho);
+    color: var(--vermelho); border-radius: 999px;
     padding: 0.3rem 1rem; font-size: 0.85rem; margin-bottom: 1.5rem;
 }
 .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); max-width: 700px; margin: 0 auto 1rem; }
-.hero h1 span { color: var(--laranja); }
+.hero h1 span { color: var(--vermelho); }
 .hero > p { max-width: 600px; margin: 0 auto 2rem; opacity: 0.9; }
 .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
 
 .btn { padding: 0.75rem 1.75rem; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: opacity 0.2s; }
-.btn-primary { background: var(--laranja); color: var(--branco); }
+.btn-primary { background: var(--vermelho); color: var(--branco); }
 .btn-secondary { background: rgba(255,255,255,0.15); color: var(--branco); border: 1px solid rgba(255,255,255,0.4); }
 .btn:hover { opacity: 0.85; }
 
@@ -101,7 +101,7 @@ a { text-decoration: none; color: inherit; }
 }
 .card strong { display: block; margin-bottom: 0.5rem; color: var(--azul); }
 .card p { font-size: 0.9rem; color: #555; margin: 0; }
-.card-warn { border-left: 4px solid var(--laranja); }
+.card-warn { border-left: 4px solid var(--vermelho); }
 
 /* ===== STEPS ===== */
 .steps { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
@@ -113,7 +113,7 @@ a { text-decoration: none; color: inherit; }
 }
 .step-num {
     font-size: 1.8rem; font-weight: 800;
-    color: var(--laranja); margin-bottom: 0.5rem;
+    color: var(--vermelho); margin-bottom: 0.5rem;
 }
 .step strong { display: block; color: var(--azul); margin-bottom: 0.25rem; }
 .step p { font-size: 0.85rem; color: #555; margin: 0; }
@@ -128,14 +128,14 @@ a { text-decoration: none; color: inherit; }
     border-radius: 12px; padding: 1.5rem 2rem; text-align: center;
     flex: 1 1 120px;
 }
-.stat strong { font-size: 2rem; display: block; color: var(--laranja); }
+.stat strong { font-size: 2rem; display: block; color: var(--vermelho); }
 .stat span { font-size: 0.85rem; opacity: 0.85; }
 
 /* ===== ALERT ===== */
 .alert {
-    background: #fff7ed; border: 1px solid var(--laranja);
+    background: #fff7ed; border: 1px solid var(--vermelho);
     border-radius: 8px; padding: 1rem 1.25rem;
-    font-size: 0.9rem; margin: 1.5rem 0; color: #7c3a00;
+    font-size: 0.9rem; margin: 1.5rem 0; color: #7c0000;
 }
 
 /* ===== BOAS PRÁTICAS ===== */
@@ -152,7 +152,7 @@ summary {
     font-weight: 600; cursor: pointer; color: var(--azul);
     list-style: none; display: flex; justify-content: space-between;
 }
-summary::after { content: "+"; font-size: 1.2rem; color: var(--laranja); }
+summary::after { content: "+"; font-size: 1.2rem; color: var(--vermelho); }
 details[open] summary::after { content: "−"; }
 details p { margin-top: 0.75rem; color: #555; font-size: 0.9rem; }
 
@@ -171,7 +171,7 @@ details p { margin-top: 0.75rem; color: #555; font-size: 0.9rem; }
 .footer ul { list-style: none; }
 .footer ul li { margin-bottom: 0.4rem; }
 .footer ul a { color: rgba(255,255,255,0.7); font-size: 0.875rem; }
-.footer ul a:hover { color: var(--laranja); }
+.footer ul a:hover { color: var(--vermelho); }
 .footer-copy {
     border-top: 1px solid rgba(255,255,255,0.15);
     padding-top: 1.25rem; font-size: 0.78rem;
@@ -190,7 +190,7 @@ details p { margin-top: 0.75rem; color: #555; font-size: 0.9rem; }
     font-size: 1.05rem; font-weight: 700; color: var(--branco);
 }
 .nav-brand span {
-    color: var(--laranja); margin-left: 4px;
+    color: var(--vermelho); margin-left: 4px;
 }
 
 /* Mobile */
@@ -202,7 +202,7 @@ details p { margin-top: 0.75rem; color: #555; font-size: 0.9rem; }
 /* ===== REDES SOCIAIS ===== */
 .social-section {
     background: rgba(255,255,255,0.95); border-radius: 12px;
-    padding: 1.5rem; margin: 2rem 0; border-left: 4px solid var(--laranja);
+    padding: 1.5rem; margin: 2rem 0; border-left: 4px solid var(--vermelho);
 }
 .social-links {
     display: flex; flex-direction: column; gap: 0.75rem;
@@ -438,7 +438,7 @@ body {
 }
 
 .fullscreen-portal-btn {
-    background: var(--laranja);
+    background: var(--vermelho);
     color: var(--branco) !important;
     padding: 1rem 2.5rem;
     border-radius: 12px;
@@ -446,11 +446,11 @@ body {
     font-weight: 700;
     display: inline-block;
     margin: 2rem 0;
-    box-shadow: 0 8px 25px rgba(224,123,42,0.4);
+    box-shadow: 0 8px 25px rgba(224, 42, 42, 0.4);
     transition: all 0.3s;
 }
 
 .fullscreen-portal-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(224,123,42,0.6);
+    box-shadow: 0 12px 35px rgba(224, 42, 42, 0.6);
 }
