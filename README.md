@@ -24,7 +24,7 @@ Site institucional desenvolvido **pelo monitor Alexandre Silvério (Grupo 4 PET-
 | Unidade | Especialidades | Modalidade |
 |---------|----------------|------------|
 | **CEM** | Neurologia <br> Endocrinologia | Teleconsulta |
-| **CAPS** <br> (Saúde Mental) | Psicologia <br> Psiquiatria | Teleconsulta |
+| **Ambulatório de Saúde Mental** <br> (Saúde Mental) | Psicologia <br> Psiquiatria | Teleconsulta |
 | **Clínica da Criança** | Neuropediatria | Teleconsulta |
 
 ## 👥 Equipe Técnica & Avaliação
@@ -57,7 +57,7 @@ cd telessaude-site
 ```
 
 ## 📄 Créditos Completos
-**Responsável pelo Desenvolvimento:** Alexandre Silvério (Monitor)  
+**Responsável pelo Desenvolvimento:** Alexandre Silvério Damião dos Santos(Monitor)  
 **Período:** fev/2026 - Mar/2026  
 
 ---
