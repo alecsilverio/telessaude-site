@@ -8,7 +8,7 @@ a { text-decoration: none; color: inherit; }
 :root {
     --azul: #1e3a8a;
     --azul-medio: #1e40af;
-    --vermelho: #db2b2b;
+    --vermelho: #c93b3b;
     --cinza-claro: #f1f5f9;
     --branco: #ffffff;
 }
@@ -452,5 +452,5 @@ body {
 
 .fullscreen-portal-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(224, 42, 42, 0.6);
+    box-shadow: 0 12px 35px rgba(182, 34, 34, 0.6);
 }

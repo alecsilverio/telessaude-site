@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
     navLinks.forEach(link => {
     link.style.color =
         link.getAttribute('href') === '#' + current
-        ? '#e07b2a'
+        ? '#e02a2a'
         : 'rgba(255,255,255,0.85)';
     });
 });
