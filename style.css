@@ -8,7 +8,7 @@ a { text-decoration: none; color: inherit; }
 :root {
     --azul: #1e3a8a;
     --azul-medio: #1e40af;
-    --vermelho: #c93b3b;
+    --vermelho: #db0902;
     --cinza-claro: #f1f5f9;
     --branco: #ffffff;
 }
@@ -26,7 +26,6 @@ a { text-decoration: none; color: inherit; }
 .nav-brand {
     font-size: 1.1rem; font-weight: 700; color: var(--branco);
 }
-.nav-brand span { color: var(--vermelho); margin-left: 4px; }
 .nav-menu { display: flex; gap: 1.5rem; }
 .nav-menu a { color: rgba(255,255,255,0.85); font-size: 0.9rem; transition: color 0.2s; }
 .nav-menu a:hover { color: var(--vermelho); }
@@ -40,13 +39,17 @@ a { text-decoration: none; color: inherit; }
     background: var(--azul); padding: 1rem 1.5rem; gap: 1rem;
     }
     .nav-menu.open { display: flex; }
+
+    .hero{
+        padding-top: 24px;
+    }
 }
 
 /* ===== HERO ===== */
 .hero {
     background: linear-gradient(135deg, var(--azul) 0%, #2a4a7f 100%);
     color: var(--branco); text-align: center;
-    padding: 5rem 1.5rem 4rem;
+    padding: 40px 24px 64px;
 }
 .badge {
     display: inline-block;
@@ -55,7 +58,7 @@ a { text-decoration: none; color: inherit; }
     padding: 0.3rem 1rem; font-size: 0.85rem; margin-bottom: 1.5rem;
 }
 .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); max-width: 700px; margin: 0 auto 1rem; }
-.hero h1 span { color: var(--vermelho); }
+.hero h1 span { color: var(--branco); }
 .hero > p { max-width: 600px; margin: 0 auto 2rem; opacity: 0.9; }
 .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
 
@@ -190,7 +193,7 @@ details p { margin-top: 0.75rem; color: #555; font-size: 0.9rem; }
     font-size: 1.05rem; font-weight: 700; color: var(--branco);
 }
 .nav-brand span {
-    color: var(--vermelho); margin-left: 4px;
+    color: var(--branco); margin-left: 4px;
 }
 
 /* Mobile */
