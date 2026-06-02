@@ -9,7 +9,7 @@
 
 ## 📋 Resumo Executivo
 
-Site institucional desenvolvido **pelo monitor Alexandre Silvério (Grupo 4 PET-Saúde)** para esclarecer o funcionamento da telemedicina no SUS de Três Lagoas/MS.
+Site institucional desenvolvido **pelo monitor Alexandre Silvério Damião dos Santos (Grupo 4 PET-Saúde)** para esclarecer o funcionamento da telemedicina no SUS de Três Lagoas/MS.
 
 **Período de desenvolvimento:** Fevereiro - Março 2026
 
