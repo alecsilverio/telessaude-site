@@ -57,7 +57,7 @@ cd telessaude-site
 ```
 
 ## 📄 Créditos Completos
-**Responsável pelo Desenvolvimento:** Alexandre Silvério Damião dos Santos(Monitor)  
+**Responsável pelo Desenvolvimento:** Alexandre Silvério Damião dos Santos (Monitor)  
 **Período:** fev/2026 - Mar/2026  
 
 ---
