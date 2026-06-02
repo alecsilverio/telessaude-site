@@ -310,6 +310,7 @@ body {
     align-items: flex-start;
     min-width: 180px;
     flex: 1;
+    align-self: flex-start;
 }
 
 .step-emoji {
@@ -325,6 +326,7 @@ body {
     box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08);
     border: 1px solid #e2e8f0;
     width: 100%;
+    align-self: flex-start;
 }
 
 .step-number {
